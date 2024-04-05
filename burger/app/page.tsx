@@ -5,13 +5,11 @@ import Hero from '@/components/Hero'
 import OurBurgers from '@/components/OurBurgers'
 import OurMenus from '@/components/OurMenus'
 import WhyUs from '@/components/WhyUs'
-import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
 import React from 'react'
 
 const page = () => {
   return (
     <>
-    <CanvasRevealEffect/>
     <Hero />
     <OurBurgers />
     <WhyUs />
