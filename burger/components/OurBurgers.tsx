@@ -5,7 +5,9 @@ import 'aos/dist/aos.css';
 import Image from 'next/image';
 import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
 import { ourbreads } from '@/export';
-
+import { ThreeDCardDemo } from '@/app/test-new-3dcard';
+import { CardBody, CardContainer, CardItem } from './ui/3d-card';
+import Link from 'next/link';
 
 const OurBurgers = () => {
   useEffect(()=>{
@@ -15,9 +17,10 @@ const OurBurgers = () => {
       easing:'ease-in-sine',
     })
   },[])
+  
   return (
-    <section id='breads' className='w-full flex flex-col justify-center items-center gap-10 bg-cover h-fit py-20 lg:px-20 px-10 bg-center' style={{ backgroundImage:`url('/banner4.jpg')`}}
-    >
+
+    <section id='breads' className='w-full flex flex-col justify-center items-center gap-10 bg-cover h-fit py-20 lg:px-20 px-10 bg-center' style={{ backgroundImage:`url('/banner4.jpg')`}}>
       <h1 data-aos="zoom-in" className='text-[55px] text-white font-semibold'>Our Breads</h1>
       <div data-aos='zoom-in' data-aos-delay="200" className='w-full grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6'>
         {ourbreads.map((item,index)=>(

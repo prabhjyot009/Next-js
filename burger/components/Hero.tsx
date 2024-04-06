@@ -3,7 +3,6 @@ import React, { useEffect } from 'react'
 import AOS  from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
-import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
 
 const Hero = () => {
 
@@ -14,7 +13,9 @@ const Hero = () => {
       easing:'ease-in-sine',
     })
   },[])
+  
   return (
+    
     <section id='hero' className='w-full flex lg:flex-row flex-col
     justify-between items-start'>
       <div id='image-section' className='lg:w-[100%] w-full'>
@@ -31,6 +32,7 @@ const Hero = () => {
       </div>
     </section>
   )
+  
 }
 
 export default Hero
