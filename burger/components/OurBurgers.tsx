@@ -3,11 +3,7 @@ import React, { useEffect } from 'react'
 import AOS  from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
-import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
 import { ourbreads } from '@/export';
-import { ThreeDCardDemo } from '@/app/test-new-3dcard';
-import { CardBody, CardContainer, CardItem } from './ui/3d-card';
-import Link from 'next/link';
 
 const OurBurgers = () => {
   useEffect(()=>{
